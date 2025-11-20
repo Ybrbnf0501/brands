@@ -9,19 +9,16 @@ new Swiper('.swiper-container',{
             enabled:false
         },
 
-        320: {
-            enabled:true,
+          320: {
+            enabled: true,
             slidesPerView: 'auto',
             spaceBetween: 16,
             slidesOffsetAfter: 86,
-
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
- 
             }
-        }
-    }
+    }   }
 })
   
 
