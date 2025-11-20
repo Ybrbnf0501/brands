@@ -1,0 +1,312 @@
+@font-face {
+    font-family: "TTLakes";
+    src: url("assets/fonts/TTLakes-Regular.woff") format("woff"); 
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    
+}
+
+@font-face {
+    font-family: "TTLakes";
+    src: url("assets/fonts/TTLakes-Medium.woff") format("woff"); 
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    
+}
+
+@font-face {
+    font-family: "TTLakes";
+    src: url("assets/fonts/TTLakes-Bold.woff") format("woff"); 
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    cursor: pointer;
+}
+
+p {
+    margin:0;
+}
+
+span {
+    text-indent: 0;
+}
+
+body { 
+    font-family: TTLakes;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: transparent;
+}
+
+header {
+    background-color: #FFFFFF;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0 ;
+    padding: 0 ;
+}
+
+h2 {
+    font-size: 28px;
+    margin: 0 ;
+    padding: 0 ;
+}
+
+article {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color:#F8F8F8;
+}
+
+
+
+.brands__title{
+    background-image: linear-gradient(90deg,#F8F8F8 , #FFFFFF);
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 16px 0 16px 32px;
+    color: #7E7E82;
+    text-transform: uppercase;
+    align-content: center;
+    border-top: 1px solid #D9FFF5;
+}
+
+
+.brands__list {
+    overflow: hidden;
+    width: auto;
+    height: 160px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-left:32px;
+    
+}
+
+.show-more{
+    height: auto;
+}
+
+.brands__item{
+    cursor: pointer;
+    background-color:#FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    width: 206px !important;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+
+}
+
+.brands__button{
+    transform: scale(1);
+    transition: transform 600ms;
+}
+
+.brands__item:hover .brands__button{
+    cursor: pointer;
+    transform: scale(1.2);
+    opacity: 600ms;
+    transition: transform 600ms, opacity 600ms;
+}
+
+/* logos */
+.brands__logo--apple {
+    background-image: url("assets/image/AppleLogo.png");
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+}
+
+.brands__logo--lenovo {
+    background-image: url("assets/image/LenovoLogo.png");
+    width: 108px;
+    height: 32px;
+    background-repeat: no-repeat;
+}
+
+.brands__logo--samsung {
+    background-image: url("assets/image/SamsungLogo.png");
+    width: 116px;
+    height: 38.5px;
+    background-repeat: no-repeat;
+}
+
+.brands__logo--viewsonic {
+    background-image: url("assets/image/ViewSonicLogo.png");
+    width: 128px;
+    height: 21px;
+    background-repeat: no-repeat;
+}
+
+.brands__button{
+    background-image: url("assets/icons/go.svg");
+    width:40px;
+    height:40px;
+}
+
+.brands-button__show-all{
+
+    display: flex;
+    margin-top: 24px ;
+    margin-left: 32px;
+    height: 24px;
+}
+
+.brands__show-all-text{
+    font-family: TTLakes;
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 8px;
+}
+
+.brands-button__arrows{
+    background-image: url("assets/icons/arrows.svg");
+    width: 24px;
+    height: 24px;
+    display: flex;
+    position: relative;
+    top:-2px
+}
+
+
+.revers__arrows{
+    transform: rotate(180deg);
+}
+
+.brands-button__show-all:hover{
+    cursor:pointer
+}
+
+
+@media (min-width: 768px) and (max-width: 1120px){
+
+    .brands__title{
+        padding:16px 0 16px 24px;
+    }
+
+.brands__list {
+    overflow: hidden;
+    display: flex;
+    gap: 16px;
+    column-gap: 0;
+    flex-wrap: wrap;
+    margin-left:32px;
+}
+.brands__list--hide-all {
+    overflow: hidden;
+    max-height: 160px;
+    display: flex;
+    gap: 16px;
+    column-gap: 32px;
+    flex-wrap: wrap;
+    margin-left:32px;
+}
+
+   .brands__item{
+        width: 190px !important;
+    }
+    
+    .brands__show-all{
+        margin-left: 24px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+
+    .brands__title{
+        padding:16px 0 16px 16px;
+    }
+
+    .brands__container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .brands__list{
+        max-height: 72px;
+        column-gap: 0;
+        margin: 0 0 0 16px;
+        display: flex;
+        flex-direction: column; 
+        overflow:visible;
+    }
+
+    .brands__item{
+        width: 206px !important; 
+    }
+    
+    .brands-button__show-all{
+        margin-left: 16px;
+        display: none;
+    }
+
+    .brands__container::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 24px;
+        height: 81px;
+        background: linear-gradient(270deg, #F8F8F8 0%, transparent 90%);
+        z-index: 10;
+    }
+
+    .swiper-pagination {
+        position: relative;
+        margin-top: 16px;
+        text-align: center;
+    }
+
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background-color: #DDDDDD;
+        opacity: 1;
+        margin: 0 6px;
+        cursor: pointer;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #B5B6BC;
+    }
+}
